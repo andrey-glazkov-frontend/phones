@@ -5,8 +5,8 @@ export function Search() {
 
   return (
     <form>
-      <div className="mb-3">
-        <input type="text" placeholder="Search" value={input} onChange={(e) => SetInput(e.target.value)} />
+      <div className=" input-group input-group-lg">
+        <input className="form-control" type="text" placeholder="Search..." value={input} onChange={(e) => SetInput(e.target.value)} />
 
       </div>
 

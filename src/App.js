@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom'
 import './App.css'
 import { Aside } from './components/Aside/Aside'
 import { UsersContextProvider } from './contexts/userContext/userContextProvider'
@@ -7,6 +8,9 @@ function App() {
     <UsersContextProvider>
       <div className="container root-container">
         <Aside />
+        <div>
+          <Outlet />
+        </div>
       </div>
     </UsersContextProvider>
   )

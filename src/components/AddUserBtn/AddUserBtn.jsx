@@ -10,16 +10,21 @@ export function AddUserBtn() {
   const clickHandler = () => {
     const newUser = {
       id: uuidv4(),
-      firsName: '',
+      firstName: '',
       lastName: '',
+      nickName: '',
       favourite: false,
+      description: '',
       email: '',
       avatar: '',
     }
+
     addNewUser(newUser)
 
-    navigate(`users/${newUser.id}`)
+    // redirect на страницу с редактированием только что созданного пользователя
+    navigate(`/users/${newUser.id}/edit`)
   }
+
   return (
     <div className="ms-2">
       <button onClick={clickHandler} type="button" className="btn btn-primary">Add</button>

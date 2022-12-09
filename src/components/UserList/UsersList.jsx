@@ -7,7 +7,7 @@ export function UsersList() {
   if (!users.length) return <div>User list is empty</div>
 
   return (
-    <ul>
+    <ul className="list-group list-group-flush">
       {users.map((user) => (
         <UsersListItem
           firstName={user.firstName}

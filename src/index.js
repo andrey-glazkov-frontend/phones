@@ -5,12 +5,14 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
 import { UserDetail } from './components/UserDetail/UserDetail'
 import { UserEdit } from './components/UserEdit/UserEdit'
+import { Inndex } from './components/Index/Index'
 
 const Myrouter = createBrowserRouter([
   {
     path: '/',
     element: <App />,
     children: [
+      { index: true, element: <Inndex /> },
       {
         path: 'users/:userId',
         element: <UserDetail />,

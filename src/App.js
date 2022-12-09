@@ -6,7 +6,7 @@ import { UsersContextProvider } from './contexts/userContext/userContextProvider
 function App() {
   return (
     <UsersContextProvider>
-      <div className="container root-container">
+      <div className="container root-container py-5">
         <Aside />
         <div>
           <Outlet />
